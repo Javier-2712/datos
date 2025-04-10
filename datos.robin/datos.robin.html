@@ -1,0 +1,983 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ES-es" xml:lang="ES-es"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.2.335">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Asesor= Javier Rodríguez Barrios">
+<meta name="dcterms.date" content="2025-04-09">
+<meta name="description" content="Evaluación de la composición de microhábitats usados por las especies de herpetos en San Andrés.">
+
+<title>Asesoría 1. Análisis de uso de microhábitats por herpetos</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1.6em;
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="datos.robin_files/libs/clipboard/clipboard.min.js"></script>
+<script src="datos.robin_files/libs/quarto-html/quarto.js"></script>
+<script src="datos.robin_files/libs/quarto-html/popper.min.js"></script>
+<script src="datos.robin_files/libs/quarto-html/tippy.umd.min.js"></script>
+<script src="datos.robin_files/libs/quarto-html/anchor.min.js"></script>
+<link href="datos.robin_files/libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="datos.robin_files/libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="datos.robin_files/libs/bootstrap/bootstrap.min.js"></script>
+<link href="datos.robin_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="datos.robin_files/libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<style>
+    .quarto-title-block .quarto-title-banner {
+      background: #66c2a5;
+    }
+    </style>
+
+<script src="datos.robin_files/libs/kePrint-0.0.1/kePrint.js"></script>
+<link href="datos.robin_files/libs/lightable-0.0.1/lightable.css" rel="stylesheet">
+
+
+<link rel="stylesheet" href="styles2.css">
+</head>
+
+<body>
+
+<header id="title-block-header" class="quarto-title-block default page-columns page-full">
+  <div class="quarto-title-banner page-columns page-full">
+    <div class="quarto-title column-body">
+      <h1 class="title">Asesoría 1. Análisis de uso de microhábitats por herpetos</h1>
+            <p class="subtitle lead">Pasantía realizada por Robin Uribe - Programa de Biología</p>
+                  <div>
+        <div class="description">
+          Evaluación de la composición de microhábitats usados por las especies de herpetos en San Andrés.
+        </div>
+      </div>
+                </div>
+  </div>
+    
+  
+  <div class="quarto-title-meta">
+
+      <div>
+      <div class="quarto-title-meta-heading">Autor/a</div>
+      <div class="quarto-title-meta-contents">
+               <p>Asesor= Javier Rodríguez Barrios </p>
+            </div>
+    </div>
+      
+      <div>
+      <div class="quarto-title-meta-heading">Fecha de publicación</div>
+      <div class="quarto-title-meta-contents">
+        <p class="date">April 9, 2025</p>
+      </div>
+    </div>
+    
+      
+    </div>
+    
+  
+  </header><div id="quarto-content" class="page-columns page-rows-contents page-layout-article">
+<div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+  <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Menú flotante</h2>
+   
+  <ul>
+  <li><a href="#resumen-del-análisis-realizado" id="toc-resumen-del-análisis-realizado" class="nav-link active" data-scroll-target="#resumen-del-análisis-realizado">Resumen del Análisis Realizado</a>
+  <ul>
+  <li><a href="#procedimiento-para-la-evaluación-realizada" id="toc-procedimiento-para-la-evaluación-realizada" class="nav-link" data-scroll-target="#procedimiento-para-la-evaluación-realizada">Procedimiento para la evaluación realizada</a>
+  <ul>
+  <li><a href="#paso-1.-tabulación-inicial-de-los-datos." id="toc-paso-1.-tabulación-inicial-de-los-datos." class="nav-link" data-scroll-target="#paso-1.-tabulación-inicial-de-los-datos.">Paso 1. Tabulación inicial de los datos.</a></li>
+  <li><a href="#paso-2.-frecuencia-de-datos-por-cada-cobertura-vegetal-grupos." id="toc-paso-2.-frecuencia-de-datos-por-cada-cobertura-vegetal-grupos." class="nav-link" data-scroll-target="#paso-2.-frecuencia-de-datos-por-cada-cobertura-vegetal-grupos."><strong>Paso 2. Frecuencia de datos por cada cobertura vegetal (grupos).</strong></a></li>
+  <li><a href="#paso-3.-frecuencia-por-cada-cobertura-y-microhábitats." id="toc-paso-3.-frecuencia-por-cada-cobertura-y-microhábitats." class="nav-link" data-scroll-target="#paso-3.-frecuencia-por-cada-cobertura-y-microhábitats."><strong>Paso 3. Frecuencia por cada cobertura y microhábitats.</strong></a></li>
+  <li><a href="#paso-4.-frecuencias-por-cada-microhábitat." id="toc-paso-4.-frecuencias-por-cada-microhábitat." class="nav-link" data-scroll-target="#paso-4.-frecuencias-por-cada-microhábitat."><strong>Paso 4. Frecuencias por cada microhábitat.</strong></a></li>
+  <li><a href="#paso-5.-nmds-para-ordenar-los-taxones-en-las-coberturas-vegetales" id="toc-paso-5.-nmds-para-ordenar-los-taxones-en-las-coberturas-vegetales" class="nav-link" data-scroll-target="#paso-5.-nmds-para-ordenar-los-taxones-en-las-coberturas-vegetales">Paso 5. NMDS para ordenar los taxones en las coberturas vegetales</a></li>
+  <li><a href="#paso-6.-realización-del-anosim." id="toc-paso-6.-realización-del-anosim." class="nav-link" data-scroll-target="#paso-6.-realización-del-anosim.">Paso 6. Realización del ANOSIM.</a></li>
+  <li><a href="#figura-del-anosim" id="toc-figura-del-anosim" class="nav-link" data-scroll-target="#figura-del-anosim">Figura del ANOSIM</a></li>
+  <li><a href="#paso-7.-opción-de-un-permanova." id="toc-paso-7.-opción-de-un-permanova." class="nav-link" data-scroll-target="#paso-7.-opción-de-un-permanova.">Paso 7. Opción de un PERMANOVA.</a></li>
+  <li><a href="#paso-7.-análisis-de-contribuciones-simper" id="toc-paso-7.-análisis-de-contribuciones-simper" class="nav-link" data-scroll-target="#paso-7.-análisis-de-contribuciones-simper">Paso 7. Análisis de contribuciones (SIMPER):</a></li>
+  </ul></li>
+  </ul></li>
+  </ul>
+</nav>
+</div>
+<main class="content quarto-banner-title-block" id="quarto-document-content">
+
+
+
+
+<section id="resumen-del-análisis-realizado" class="level3">
+<h3 class="anchored" data-anchor-id="resumen-del-análisis-realizado">Resumen del Análisis Realizado</h3>
+<p><strong>Se evaluó si la composición del uso de microhábitats por parte de las especies de herpetofauna varía significativamente entre diferentes coberturas vegetales</strong> (bosque seco, rastrojo, potrero, manglar). La <strong>hipótesis principal</strong> fue que la distribución de especies entre microhábitats (sustratos) cambia en función del tipo de cobertura vegetal. Para ello, se construyó una <strong>matriz de frecuencias de especies</strong> <strong>por tipo de sustrato dentro de cada cobertura</strong>, y se aplicaron los siguientes métodos multivariados:</p>
+<ul>
+<li><p><strong>NMDS (Escalamiento multidimensional no métrico)</strong>: permitió visualizar gráficamente los patrones de uso del microhábitat, mostrando un alto solapamiento entre coberturas vegetales, por lo cual no hay evidencias gráficas para validar la hipótesis.</p></li>
+<li><p><strong>ANOSIM (Análisis de Similitudes)</strong>: indicó un estadístico R negativo (<strong>R = -0.053</strong>), lo cual sugiere que la variabilidad dentro de los grupos (coberturas) es mayor o similar a la que existe entre ellos. <strong>Este resultado no es ecológicamente interpretable</strong> y puede reflejar una falta de estructura clara entre grupos, entre otros aspectos que se describen en el análisis.</p></li>
+<li><p><strong>PERMANOVA (Manova permutacional)</strong>: confirmó la <strong>ausencia de diferencias significativas</strong> en la composición del uso de microhábitats entre coberturas, reforzando la conclusión obtenida por ANOSIM.</p></li>
+<li><p><strong>SIMPER (Análisis de porcentaje de similitud)</strong>: Se utilizó para identificar los microhábitats (sustratos) que contribuyen más a la disimilitud entre pares de coberturas. Para cada contraste (por ejemplo, <strong>bosque seco vs.&nbsp;manglar</strong>), el análisis se usó para evaluar los microhábitats que más explicaron la diferencia en composición (valores p &lt;0.05), el porcentaje de contribución de cada sustrato a la disimilitud total, la disimilitud promedio entre coberturas (average dissimilarity) y la desviación estándar, que indica la consistencia de las diferencias evaluadas.</p></li>
+</ul>
+<hr>
+<section id="procedimiento-para-la-evaluación-realizada" class="level4">
+<h4 class="anchored" data-anchor-id="procedimiento-para-la-evaluación-realizada">Procedimiento para la evaluación realizada</h4>
+<section id="paso-1.-tabulación-inicial-de-los-datos." class="level5">
+<h5 class="anchored" data-anchor-id="paso-1.-tabulación-inicial-de-los-datos.">Paso 1. Tabulación inicial de los datos.</h5>
+<p>En la <a href="#tbl-tbl1">Tabla&nbsp;1</a> se muestra una matriz general (<strong>tabla_microhabitat</strong>) que combina la frecuencia de presencias de especies de herpetos, por coberturas vegetales y sustratos o microhábitats.</p>
+<p>Cada <strong>fila</strong> representa la frecuancia en la <strong>combinación de la presencia de cada especie más la cobertura vegetal</strong>. Las <strong>columnas</strong> también representan a las frecuencias de la combinación anterior, en los distintos <strong>microhábitats (Sustratos)</strong>. Los valores también representan a los <strong>conteo de veces</strong> que la especie fue registrada en ese microhábitat bajo cada cobertura vegetal.</p>
+<div class="cell">
+<div class="cell-output-display">
+<div id="tbl-tbl1" class="anchored">
+
+<table class=" lightable-classic" style="font-family: &quot;Arial Narrow&quot;, &quot;Source Sans Pro&quot;, sans-serif; width: auto !important; margin-left: auto; margin-right: auto;"><caption>Tabla&nbsp;1:  Resumen de las seis primeras con la relación de coberturas vegetales (grupos) y sustratos o microhábitats por cada especie evaluada. </caption>
+ <thead>
+  <tr>
+   <th style="text-align:left;"> Especie </th>
+   <th style="text-align:left;"> Cobertura vegetal </th>
+   <th style="text-align:right;"> Fuste </th>
+   <th style="text-align:right;"> Hoja </th>
+   <th style="text-align:right;"> Hojarasca </th>
+   <th style="text-align:right;"> Otros </th>
+   <th style="text-align:right;"> Raiz </th>
+   <th style="text-align:right;"> Rama </th>
+   <th style="text-align:right;"> Raíz </th>
+   <th style="text-align:right;"> Roca </th>
+   <th style="text-align:right;"> Suelo desnudo </th>
+   <th style="text-align:right;"> hoja </th>
+   <th style="text-align:right;"> otros </th>
+   <th style="text-align:right;"> rama </th>
+   <th style="text-align:right;"> hojarasca </th>
+  </tr>
+ </thead>
+<tbody>
+  <tr>
+   <td style="text-align:left;"> Anolis concolor </td>
+   <td style="text-align:left;"> BsT </td>
+   <td style="text-align:right;"> 568 </td>
+   <td style="text-align:right;"> 322 </td>
+   <td style="text-align:right;"> 434 </td>
+   <td style="text-align:right;"> 226 </td>
+   <td style="text-align:right;"> 18 </td>
+   <td style="text-align:right;"> 316 </td>
+   <td style="text-align:right;"> 13 </td>
+   <td style="text-align:right;"> 29 </td>
+   <td style="text-align:right;"> 28 </td>
+   <td style="text-align:right;"> 1 </td>
+   <td style="text-align:right;"> 2 </td>
+   <td style="text-align:right;"> 1 </td>
+   <td style="text-align:right;"> 0 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> Anolis concolor </td>
+   <td style="text-align:left;"> Manglar </td>
+   <td style="text-align:right;"> 268 </td>
+   <td style="text-align:right;"> 31 </td>
+   <td style="text-align:right;"> 181 </td>
+   <td style="text-align:right;"> 93 </td>
+   <td style="text-align:right;"> 9 </td>
+   <td style="text-align:right;"> 46 </td>
+   <td style="text-align:right;"> 11 </td>
+   <td style="text-align:right;"> 27 </td>
+   <td style="text-align:right;"> 46 </td>
+   <td style="text-align:right;"> 0 </td>
+   <td style="text-align:right;"> 0 </td>
+   <td style="text-align:right;"> 0 </td>
+   <td style="text-align:right;"> 1 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> Anolis concolor </td>
+   <td style="text-align:left;"> Potrero </td>
+   <td style="text-align:right;"> 369 </td>
+   <td style="text-align:right;"> 95 </td>
+   <td style="text-align:right;"> 193 </td>
+   <td style="text-align:right;"> 141 </td>
+   <td style="text-align:right;"> 22 </td>
+   <td style="text-align:right;"> 81 </td>
+   <td style="text-align:right;"> 31 </td>
+   <td style="text-align:right;"> 24 </td>
+   <td style="text-align:right;"> 22 </td>
+   <td style="text-align:right;"> 0 </td>
+   <td style="text-align:right;"> 1 </td>
+   <td style="text-align:right;"> 0 </td>
+   <td style="text-align:right;"> 0 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> Anolis concolor </td>
+   <td style="text-align:left;"> Rastrojo </td>
+   <td style="text-align:right;"> 801 </td>
+   <td style="text-align:right;"> 265 </td>
+   <td style="text-align:right;"> 601 </td>
+   <td style="text-align:right;"> 160 </td>
+   <td style="text-align:right;"> 43 </td>
+   <td style="text-align:right;"> 397 </td>
+   <td style="text-align:right;"> 70 </td>
+   <td style="text-align:right;"> 15 </td>
+   <td style="text-align:right;"> 67 </td>
+   <td style="text-align:right;"> 0 </td>
+   <td style="text-align:right;"> 5 </td>
+   <td style="text-align:right;"> 0 </td>
+   <td style="text-align:right;"> 0 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> Aristelliger georgeensis </td>
+   <td style="text-align:left;"> BsT </td>
+   <td style="text-align:right;"> 161 </td>
+   <td style="text-align:right;"> 8 </td>
+   <td style="text-align:right;"> 24 </td>
+   <td style="text-align:right;"> 227 </td>
+   <td style="text-align:right;"> 1 </td>
+   <td style="text-align:right;"> 10 </td>
+   <td style="text-align:right;"> 1 </td>
+   <td style="text-align:right;"> 18 </td>
+   <td style="text-align:right;"> 0 </td>
+   <td style="text-align:right;"> 1 </td>
+   <td style="text-align:right;"> 0 </td>
+   <td style="text-align:right;"> 0 </td>
+   <td style="text-align:right;"> 0 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> Aristelliger georgeensis </td>
+   <td style="text-align:left;"> Manglar </td>
+   <td style="text-align:right;"> 98 </td>
+   <td style="text-align:right;"> 1 </td>
+   <td style="text-align:right;"> 31 </td>
+   <td style="text-align:right;"> 58 </td>
+   <td style="text-align:right;"> 2 </td>
+   <td style="text-align:right;"> 3 </td>
+   <td style="text-align:right;"> 0 </td>
+   <td style="text-align:right;"> 5 </td>
+   <td style="text-align:right;"> 2 </td>
+   <td style="text-align:right;"> 0 </td>
+   <td style="text-align:right;"> 0 </td>
+   <td style="text-align:right;"> 0 </td>
+   <td style="text-align:right;"> 0 </td>
+  </tr>
+</tbody>
+</table>
+
+</div>
+</div>
+</div>
+</section>
+<section id="paso-2.-frecuencia-de-datos-por-cada-cobertura-vegetal-grupos." class="level5">
+<h5 class="anchored" data-anchor-id="paso-2.-frecuencia-de-datos-por-cada-cobertura-vegetal-grupos."><strong>Paso 2. Frecuencia de datos por cada cobertura vegetal (grupos).</strong></h5>
+<p>En la <a href="#tbl-tbl2">Tabla&nbsp;2</a> (<strong>conteo_grupos</strong>) se muestra la frecuencia de filas (combinaciones de especies + coberturas de <a href="#tbl-tbl1">Tabla&nbsp;1</a>) que hay por cada cobertura vegetal (<strong>tabla_microhabitat</strong>).</p>
+<div class="cell">
+<div class="cell-output-display">
+<div id="tbl-tbl2" class="anchored">
+
+<table class=" lightable-classic" style="font-family: &quot;Arial Narrow&quot;, &quot;Source Sans Pro&quot;, sans-serif; width: auto !important; margin-left: auto; margin-right: auto;"><caption>Tabla&nbsp;2:  Frecuencia de especies + coberturas, por cada cobertura veetal evaluada. </caption>
+ <thead>
+  <tr>
+   <th style="text-align:left;"> Cobertura vegetal </th>
+   <th style="text-align:right;"> n </th>
+  </tr>
+ </thead>
+<tbody>
+  <tr>
+   <td style="text-align:left;"> BsT </td>
+   <td style="text-align:right;"> 13 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> Manglar </td>
+   <td style="text-align:right;"> 11 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> Potrero </td>
+   <td style="text-align:right;"> 11 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> Rastrojo </td>
+   <td style="text-align:right;"> 14 </td>
+  </tr>
+</tbody>
+</table>
+
+</div>
+</div>
+</div>
+<hr>
+</section>
+<section id="paso-3.-frecuencia-por-cada-cobertura-y-microhábitats." class="level5">
+<h5 class="anchored" data-anchor-id="paso-3.-frecuencia-por-cada-cobertura-y-microhábitats."><strong>Paso 3. Frecuencia por cada cobertura y microhábitats.</strong></h5>
+<p>La <a href="#tbl-tbl3">Tabla&nbsp;3</a> (<strong>tabla_filtrada</strong>) es una versión reducida de <strong>tabla_microhabitat</strong> (<a href="#tbl-tbl1">Tabla&nbsp;1</a>), que: <strong>Elimina las combinaciones</strong> de especie + cobertura vegetal <strong>que ocurren solo una vez</strong>. Para este caso no se elimina ninguna especie. Este filtro es necesario porque <strong>métodos como ANOSIM requieren replicación dentro de cada grupo</strong> (más de una fila por nivel de cobertura vegetal).</p>
+<div class="cell">
+<div class="cell-output-display">
+<div id="tbl-tbl3" class="anchored">
+
+<table class=" lightable-classic" style="font-family: &quot;Arial Narrow&quot;, &quot;Source Sans Pro&quot;, sans-serif; width: auto !important; margin-left: auto; margin-right: auto;"><caption>Tabla&nbsp;3:  Resumen de las seis primeras con la frecuencia de especies + coberturas. </caption>
+ <thead>
+  <tr>
+   <th style="text-align:left;"> Especie </th>
+   <th style="text-align:left;"> Cobertura vegetal </th>
+   <th style="text-align:right;"> Fuste </th>
+   <th style="text-align:right;"> Hoja </th>
+   <th style="text-align:right;"> Hojarasca </th>
+   <th style="text-align:right;"> Otros </th>
+   <th style="text-align:right;"> Raiz </th>
+   <th style="text-align:right;"> Rama </th>
+   <th style="text-align:right;"> Raíz </th>
+   <th style="text-align:right;"> Roca </th>
+   <th style="text-align:right;"> Suelo desnudo </th>
+   <th style="text-align:right;"> hoja </th>
+   <th style="text-align:right;"> otros </th>
+   <th style="text-align:right;"> rama </th>
+   <th style="text-align:right;"> hojarasca </th>
+  </tr>
+ </thead>
+<tbody>
+  <tr>
+   <td style="text-align:left;"> Anolis concolor </td>
+   <td style="text-align:left;"> BsT </td>
+   <td style="text-align:right;"> 568 </td>
+   <td style="text-align:right;"> 322 </td>
+   <td style="text-align:right;"> 434 </td>
+   <td style="text-align:right;"> 226 </td>
+   <td style="text-align:right;"> 18 </td>
+   <td style="text-align:right;"> 316 </td>
+   <td style="text-align:right;"> 13 </td>
+   <td style="text-align:right;"> 29 </td>
+   <td style="text-align:right;"> 28 </td>
+   <td style="text-align:right;"> 1 </td>
+   <td style="text-align:right;"> 2 </td>
+   <td style="text-align:right;"> 1 </td>
+   <td style="text-align:right;"> 0 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> Anolis concolor </td>
+   <td style="text-align:left;"> Manglar </td>
+   <td style="text-align:right;"> 268 </td>
+   <td style="text-align:right;"> 31 </td>
+   <td style="text-align:right;"> 181 </td>
+   <td style="text-align:right;"> 93 </td>
+   <td style="text-align:right;"> 9 </td>
+   <td style="text-align:right;"> 46 </td>
+   <td style="text-align:right;"> 11 </td>
+   <td style="text-align:right;"> 27 </td>
+   <td style="text-align:right;"> 46 </td>
+   <td style="text-align:right;"> 0 </td>
+   <td style="text-align:right;"> 0 </td>
+   <td style="text-align:right;"> 0 </td>
+   <td style="text-align:right;"> 1 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> Anolis concolor </td>
+   <td style="text-align:left;"> Potrero </td>
+   <td style="text-align:right;"> 369 </td>
+   <td style="text-align:right;"> 95 </td>
+   <td style="text-align:right;"> 193 </td>
+   <td style="text-align:right;"> 141 </td>
+   <td style="text-align:right;"> 22 </td>
+   <td style="text-align:right;"> 81 </td>
+   <td style="text-align:right;"> 31 </td>
+   <td style="text-align:right;"> 24 </td>
+   <td style="text-align:right;"> 22 </td>
+   <td style="text-align:right;"> 0 </td>
+   <td style="text-align:right;"> 1 </td>
+   <td style="text-align:right;"> 0 </td>
+   <td style="text-align:right;"> 0 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> Anolis concolor </td>
+   <td style="text-align:left;"> Rastrojo </td>
+   <td style="text-align:right;"> 801 </td>
+   <td style="text-align:right;"> 265 </td>
+   <td style="text-align:right;"> 601 </td>
+   <td style="text-align:right;"> 160 </td>
+   <td style="text-align:right;"> 43 </td>
+   <td style="text-align:right;"> 397 </td>
+   <td style="text-align:right;"> 70 </td>
+   <td style="text-align:right;"> 15 </td>
+   <td style="text-align:right;"> 67 </td>
+   <td style="text-align:right;"> 0 </td>
+   <td style="text-align:right;"> 5 </td>
+   <td style="text-align:right;"> 0 </td>
+   <td style="text-align:right;"> 0 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> Aristelliger georgeensis </td>
+   <td style="text-align:left;"> BsT </td>
+   <td style="text-align:right;"> 161 </td>
+   <td style="text-align:right;"> 8 </td>
+   <td style="text-align:right;"> 24 </td>
+   <td style="text-align:right;"> 227 </td>
+   <td style="text-align:right;"> 1 </td>
+   <td style="text-align:right;"> 10 </td>
+   <td style="text-align:right;"> 1 </td>
+   <td style="text-align:right;"> 18 </td>
+   <td style="text-align:right;"> 0 </td>
+   <td style="text-align:right;"> 1 </td>
+   <td style="text-align:right;"> 0 </td>
+   <td style="text-align:right;"> 0 </td>
+   <td style="text-align:right;"> 0 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> Aristelliger georgeensis </td>
+   <td style="text-align:left;"> Manglar </td>
+   <td style="text-align:right;"> 98 </td>
+   <td style="text-align:right;"> 1 </td>
+   <td style="text-align:right;"> 31 </td>
+   <td style="text-align:right;"> 58 </td>
+   <td style="text-align:right;"> 2 </td>
+   <td style="text-align:right;"> 3 </td>
+   <td style="text-align:right;"> 0 </td>
+   <td style="text-align:right;"> 5 </td>
+   <td style="text-align:right;"> 2 </td>
+   <td style="text-align:right;"> 0 </td>
+   <td style="text-align:right;"> 0 </td>
+   <td style="text-align:right;"> 0 </td>
+   <td style="text-align:right;"> 0 </td>
+  </tr>
+</tbody>
+</table>
+
+</div>
+</div>
+</div>
+<hr>
+</section>
+<section id="paso-4.-frecuencias-por-cada-microhábitat." class="level5">
+<h5 class="anchored" data-anchor-id="paso-4.-frecuencias-por-cada-microhábitat."><strong>Paso 4. Frecuencias por cada microhábitat.</strong></h5>
+<p>La <a href="#tbl-tbl4">Tabla&nbsp;4</a> relaciona a la frecuencia de especies por microhábitat, <strong>filtrada para conservar solo coberturas vegetales con replicación suficiente</strong> para evaluarla en el ANOSIM o el permanova.</p>
+<p>Esta matriz será la que se utilice en las pruebas de hipótesis multivariadas, <strong>solo presenta columnas de sustratos o microhábitats</strong>, en formato de presencia/ausencia (o de frecuencias), asegurando que todas sean numéricas. Con esto, quedan <strong>sólo con columnas numéricas como “Hojarasca”, “Raíz”, “Fuste”, etc.</strong></p>
+<div class="cell">
+<div class="cell-output-display">
+<div id="tbl-tbl4" class="anchored">
+
+<table class=" lightable-classic" style="font-family: &quot;Arial Narrow&quot;, &quot;Source Sans Pro&quot;, sans-serif; width: auto !important; margin-left: auto; margin-right: auto;"><caption>Tabla&nbsp;4:  Resumen de las seis primeras con la frecuencia de especies + coberturas. </caption>
+ <thead>
+  <tr>
+   <th style="text-align:right;"> Fuste </th>
+   <th style="text-align:right;"> Hoja </th>
+   <th style="text-align:right;"> Hojarasca </th>
+   <th style="text-align:right;"> Otros </th>
+   <th style="text-align:right;"> Raiz </th>
+   <th style="text-align:right;"> Rama </th>
+   <th style="text-align:right;"> Raíz </th>
+   <th style="text-align:right;"> Roca </th>
+   <th style="text-align:right;"> Suelo desnudo </th>
+   <th style="text-align:right;"> hoja </th>
+   <th style="text-align:right;"> otros </th>
+   <th style="text-align:right;"> rama </th>
+   <th style="text-align:right;"> hojarasca </th>
+  </tr>
+ </thead>
+<tbody>
+  <tr>
+   <td style="text-align:right;"> 568 </td>
+   <td style="text-align:right;"> 322 </td>
+   <td style="text-align:right;"> 434 </td>
+   <td style="text-align:right;"> 226 </td>
+   <td style="text-align:right;"> 18 </td>
+   <td style="text-align:right;"> 316 </td>
+   <td style="text-align:right;"> 13 </td>
+   <td style="text-align:right;"> 29 </td>
+   <td style="text-align:right;"> 28 </td>
+   <td style="text-align:right;"> 1 </td>
+   <td style="text-align:right;"> 2 </td>
+   <td style="text-align:right;"> 1 </td>
+   <td style="text-align:right;"> 0 </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 268 </td>
+   <td style="text-align:right;"> 31 </td>
+   <td style="text-align:right;"> 181 </td>
+   <td style="text-align:right;"> 93 </td>
+   <td style="text-align:right;"> 9 </td>
+   <td style="text-align:right;"> 46 </td>
+   <td style="text-align:right;"> 11 </td>
+   <td style="text-align:right;"> 27 </td>
+   <td style="text-align:right;"> 46 </td>
+   <td style="text-align:right;"> 0 </td>
+   <td style="text-align:right;"> 0 </td>
+   <td style="text-align:right;"> 0 </td>
+   <td style="text-align:right;"> 1 </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 369 </td>
+   <td style="text-align:right;"> 95 </td>
+   <td style="text-align:right;"> 193 </td>
+   <td style="text-align:right;"> 141 </td>
+   <td style="text-align:right;"> 22 </td>
+   <td style="text-align:right;"> 81 </td>
+   <td style="text-align:right;"> 31 </td>
+   <td style="text-align:right;"> 24 </td>
+   <td style="text-align:right;"> 22 </td>
+   <td style="text-align:right;"> 0 </td>
+   <td style="text-align:right;"> 1 </td>
+   <td style="text-align:right;"> 0 </td>
+   <td style="text-align:right;"> 0 </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 801 </td>
+   <td style="text-align:right;"> 265 </td>
+   <td style="text-align:right;"> 601 </td>
+   <td style="text-align:right;"> 160 </td>
+   <td style="text-align:right;"> 43 </td>
+   <td style="text-align:right;"> 397 </td>
+   <td style="text-align:right;"> 70 </td>
+   <td style="text-align:right;"> 15 </td>
+   <td style="text-align:right;"> 67 </td>
+   <td style="text-align:right;"> 0 </td>
+   <td style="text-align:right;"> 5 </td>
+   <td style="text-align:right;"> 0 </td>
+   <td style="text-align:right;"> 0 </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 161 </td>
+   <td style="text-align:right;"> 8 </td>
+   <td style="text-align:right;"> 24 </td>
+   <td style="text-align:right;"> 227 </td>
+   <td style="text-align:right;"> 1 </td>
+   <td style="text-align:right;"> 10 </td>
+   <td style="text-align:right;"> 1 </td>
+   <td style="text-align:right;"> 18 </td>
+   <td style="text-align:right;"> 0 </td>
+   <td style="text-align:right;"> 1 </td>
+   <td style="text-align:right;"> 0 </td>
+   <td style="text-align:right;"> 0 </td>
+   <td style="text-align:right;"> 0 </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 98 </td>
+   <td style="text-align:right;"> 1 </td>
+   <td style="text-align:right;"> 31 </td>
+   <td style="text-align:right;"> 58 </td>
+   <td style="text-align:right;"> 2 </td>
+   <td style="text-align:right;"> 3 </td>
+   <td style="text-align:right;"> 0 </td>
+   <td style="text-align:right;"> 5 </td>
+   <td style="text-align:right;"> 2 </td>
+   <td style="text-align:right;"> 0 </td>
+   <td style="text-align:right;"> 0 </td>
+   <td style="text-align:right;"> 0 </td>
+   <td style="text-align:right;"> 0 </td>
+  </tr>
+</tbody>
+</table>
+
+</div>
+</div>
+</div>
+<hr>
+</section>
+<section id="paso-5.-nmds-para-ordenar-los-taxones-en-las-coberturas-vegetales" class="level5">
+<h5 class="anchored" data-anchor-id="paso-5.-nmds-para-ordenar-los-taxones-en-las-coberturas-vegetales">Paso 5. NMDS para ordenar los taxones en las coberturas vegetales</h5>
+<p>Se usó la matriz de distancia <strong>Bray Curtis. El estrés es de 0.19</strong>, lo que demuestra una configuración regular de los datos.</p>
+<div class="cell">
+
+</div>
+<p>Los puntos de la <a href="#fig-fig1">Figura&nbsp;1</a> representa a una combinación única de las especies x coberturas vegetales, caracterizada por su perfil o frecencia de uso de sustratos o de microhábitats (ver primera columna de la <strong>tabla_filtrada</strong> <a href="#tbl-tbl3">Tabla&nbsp;3</a>).</p>
+<p>En este sentido se pretende visualizar <strong>si las combinaciones especie-cobertura</strong> se agrupan de manera similar según el uso de microhábitats. Se buscar visualizar si se presentan grupos de puntos del mismo color (misma cobertura vegetal), caso que no ocurre en este ejercicio, por la ausencia de diferencias significtivas que se comprobarán más adelante con el Anosim, permanova y Simper.</p>
+<div class="cell">
+<div class="cell-output-display">
+<div id="fig-fig1" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="datos.robin_files/figure-html/fig-fig1-1.png" class="img-fluid figure-img" width="672"></p>
+<p></p><figcaption class="figure-caption">Figura&nbsp;1: Ordenación de las combinaciones especie-cobertura segun el uso de microhábitats.</figcaption><p></p>
+</figure>
+</div>
+</div>
+</div>
+<hr>
+<div class="cell">
+
+</div>
+<div class="cell">
+
+</div>
+<div class="cell">
+
+</div>
+<p>La <a href="#fig-fig2">Figura&nbsp;2</a> incorpora a los microhábitats como vectores, para visualizar el patrón de ordenación de <strong>las combinaciones especie-cobertura</strong> en los diferentes grupos. Cabe resaltas que por no existir diferencias entre los grupos (grp) no hay una manera clara de visualizar gradientes.</p>
+<div class="cell">
+<div class="cell-output-display">
+<div id="fig-fig2" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="datos.robin_files/figure-html/fig-fig2-1.png" class="img-fluid figure-img" width="672"></p>
+<p></p><figcaption class="figure-caption">Figura&nbsp;2: Ordenación de las combinaciones especie-cobertura segun el uso de microhábitats.</figcaption><p></p>
+</figure>
+</div>
+</div>
+</div>
+<p>En la <a href="#fig-fig3">Figura&nbsp;3</a> se incorporan elipses, para intentar visualizar diferencias entre los grupos comparados. Al solaparse las elipses, se soporta la prueba de hipótesis que se validará con el anosim y el permanova, en el cual no hay diferencias de los especímenes entre coberturas vegetales.</p>
+<div class="cell">
+<div class="cell-output-display">
+<div id="fig-fig3" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="datos.robin_files/figure-html/fig-fig3-1.png" class="img-fluid figure-img" width="672"></p>
+<p></p><figcaption class="figure-caption">Figura&nbsp;3: Ordenación de las combinaciones especie-cobertura segun el uso de microhábitats.</figcaption><p></p>
+</figure>
+</div>
+</div>
+</div>
+<hr>
+</section>
+<section id="paso-6.-realización-del-anosim." class="level5">
+<h5 class="anchored" data-anchor-id="paso-6.-realización-del-anosim.">Paso 6. Realización del ANOSIM.</h5>
+<p>Con esta técnica multivariada, se busca probar la <strong>hipótesis principal</strong> de que la distribución de especies entre microhábitats (sustratos) cambia en función del tipo de cobertura vegetal. Se relacionan los <strong>grupos</strong> de las <strong>coberturas vegetales</strong> (<strong>BsT, Manglar, Potrero y Rastrojo</strong>) como grupos para el anosim.</p>
+<p>El resultado del ANOSIM, muestra un <strong>R negativo</strong> (-0.05344).</p>
+<div class="cell">
+<div class="cell-output cell-output-stdout">
+<pre><code>
+Call:
+anosim(x = distancias, grouping = grupo, permutations = 199) 
+Dissimilarity: bray 
+
+ANOSIM statistic R: -0.05344 
+      Significance: 0.975 
+
+Permutation: free
+Number of permutations: 199
+
+Upper quantiles of permutations (null model):
+   90%    95%  97.5%    99% 
+0.0377 0.0537 0.0713 0.1024 
+
+Dissimilarity ranks between and within classes:
+           0%     25%    50%     75%   100%   N
+Between   1.5 286.000 580.00 872.000 1160.0 897
+BsT      30.0 275.875 649.75 899.875 1131.5  78
+Manglar   6.0 412.250 705.50 997.750 1160.0  55
+Potrero  57.0 331.500 592.00 836.250 1160.0  55
+Rastrojo 19.0 334.500 635.00 896.250 1160.0  91</code></pre>
+</div>
+</div>
+<p>El valor negativo del estadístico R, puede presentarse por las siguientes condiciones:</p>
+<ul>
+<li><strong>Los grupos no están realmente separados.</strong> Puede que las coberturas vegetales (u otros factores usados como grupos) <strong>no produzcan patrones distintos de uso del microhábitat</strong>. Entonces, no hay estructura real que ANOSIM pueda detectar.</li>
+<li><strong>Agrupamientos artificiales o mal definidos.</strong> Puede haber <strong>combinaciones únicas o casi únicas</strong> sin replicas suficientes, lo que genera comparaciones inconsistentes.</li>
+<li><strong>Alta heterogeneidad dentro de grupos.</strong> Si los datos son muy dispersos <strong>dentro</strong> de cada cobertura, entonces la distancia (D) <strong>D<sub>dentro</sub></strong> es muy grande. Si además, <strong>D<sub>entre</sub></strong> no es mucho mayor, el estadístico R puede resultar negativo.</li>
+<li><strong>Poca o nula replicación.</strong> ANOSIM necesita <strong>múltiples unidades por grupo</strong>. Si hay muy pocos datos por cobertura o especie, no hay suficiente información para comparar distancias entre y dentro de grupos.</li>
+<li>En resumen: El resultado muestra que <strong>no hay evidencia de que las especies usen el microhábitat de manera diferente según la cobertura vegetal</strong>.</li>
+</ul>
+<hr>
+</section>
+<section id="figura-del-anosim" class="level5">
+<h5 class="anchored" data-anchor-id="figura-del-anosim">Figura del ANOSIM</h5>
+<div class="cell">
+<div class="cell-output-display">
+<div id="fig-fig4" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="datos.robin_files/figure-html/fig-fig4-1.png" class="img-fluid figure-img" width="672"></p>
+<p></p><figcaption class="figure-caption">Figura&nbsp;4: Figura del ANOSIM realizado.</figcaption><p></p>
+</figure>
+</div>
+</div>
+</div>
+<p>Essta <a href="#fig-fig4">Figura&nbsp;4</a> una <strong>gráfica de cajas (boxplot)</strong> de las <strong>distancias de disimilitud (Bray-Curtis)</strong> entre las observaciones:</p>
+<ul>
+<li><p><strong>Eje Y (distancias de rango)</strong>: representa los rangos de disimilitud (entre 0 y 1).</p></li>
+<li><p><strong>Dos grupos de cajas</strong>: <strong>“Between”</strong>: distancias entre grupos distintos (por ejemplo, entre especies de bosque seco y manglar). <strong>“Within”</strong>: distancias dentro del mismo grupo (por ejemplo, solo entre especies de bosque seco).</p></li>
+<li><p><strong>Si la caja de “Between” está claramente por encima de “Within”</strong>: habrá diferencias entre los grupos. Para este caso las coerturas se diferenciarian en el uso de los microhábitats.</p></li>
+<li><p><strong>Si las cajas se superponen o la de “Between” está abajo</strong>: no habrá diferencias. Este es el caso del presente análisis. El valor del estadístico <strong>R es cercano a 0 o negativo</strong>, y el <strong>valor p es alto</strong> (no significativo).</p></li>
+<li><p>En este sentido la figura muestra que <strong>no hay evidencia de que las especies usen el microhábitat de manera diferente según la cobertura vegetal</strong>.</p></li>
+</ul>
+<hr>
+</section>
+<section id="paso-7.-opción-de-un-permanova." class="level5">
+<h5 class="anchored" data-anchor-id="paso-7.-opción-de-un-permanova.">Paso 7. Opción de un PERMANOVA.</h5>
+<p>El comando <code>adonis2</code> es es una buena opción para situaciones como las del ANOSIM anterior (R negativo) y para manejar interacciones complejas y dar una idea más clara de las diferencias etre los grupos.</p>
+<p>En este <strong>permanova</strong> se observa que no hay diferencias entre los grupos o coberturas vegetales (BsT, Manglar, Potrero y Rastrojo).</p>
+<div class="cell">
+<div class="cell-output cell-output-stdout">
+<pre><code>Permutation test for adonis under reduced model
+Permutation: free
+Number of permutations: 199
+
+adonis2(formula = distancias ~ grupo, permutations = 199)
+         Df SumOfSqs     R2      F Pr(&gt;F)
+Model     3   0.5201 0.0326 0.5055  0.995
+Residual 45  15.4324 0.9674              
+Total    48  15.9525 1.0000              </code></pre>
+</div>
+</div>
+<hr>
+</section>
+<section id="paso-7.-análisis-de-contribuciones-simper" class="level5">
+<h5 class="anchored" data-anchor-id="paso-7.-análisis-de-contribuciones-simper">Paso 7. Análisis de contribuciones (SIMPER):</h5>
+<ul>
+<li><p><code>matriz_filtrada</code>: Es la matriz de frecuencia de uso de cada microhábitat por combinación especie-cobertura (ya filtrada para eliminar columnas no numéricas).</p></li>
+<li><p><code>grupo</code>: vector que contiene los niveles de cobertura vegetal (bosque, potrero, manglar, etc.).</p></li>
+</ul>
+<p>Para <strong>cada par de coberturas vegetales (ej:</strong> Contrast: <strong>BsT_Manglar)</strong>:</p>
+<ul>
+<li><p>Qué <strong>sustratos (microhábitats)</strong> contribuyen más a diferenciarlas.</p></li>
+<li><p>El <strong>porcentaje de contribución</strong> de cada microhábitat a la disimilitud o diferenciación total.</p></li>
+<li><p>El <strong>promedio de disimilitud (average dissimilarity)</strong> entre coberturas.</p></li>
+<li><p>La <strong>desviación estándar</strong>, que indica qué tan consistente es esa diferencia.</p></li>
+</ul>
+<div class="cell">
+
+</div>
+<p>Para resumir el análisis se muestra a continuación las <strong>tres comparaciones más importantes entre las parejas de coberturas evaluadas</strong>.</p>
+<div class="cell">
+<div class="cell-output cell-output-stdout">
+<pre><code>
+Contrast: BsT_Manglar 
+
+              average      sd   ratio     ava     avb cumsum    p  
+Fuste          0.2486  0.1747  1.4230 61.8000 52.5000   0.31 0.37  
+Hojarasca      0.1821  0.1556  1.1700 44.5000 29.4000   0.54 0.54  
+Otros          0.1761  0.1344  1.3100 42.2000 23.2000   0.76 0.32  
+Roca           0.0675  0.1312  0.5150  8.8000  3.4000   0.84 0.30  
+Suelo desnudo  0.0452  0.0584  0.7730  4.0000  7.4000   0.90 0.58  
+Rama           0.0418  0.0511  0.8180 26.5000  6.1000   0.95 0.53  
+Hoja           0.0340  0.0576  0.5900 26.2000  3.9000   0.99 0.54  
+Raiz           0.0051  0.0078  0.6540  1.6000  1.2000   1.00 0.80  
+Raíz           0.0021  0.0042  0.4950  1.1000  1.1000   1.00 1.00  
+hojarasca      0.0013  0.0041  0.3160  0.0000  0.3000   1.00 0.05 *
+hoja           0.0002  0.0005  0.3490  0.2000  0.0000   1.00 0.18  
+otros          0.0001  0.0003  0.2870  0.2000  0.0000   1.00 0.98  
+rama           0.0000  0.0001  0.2870  0.1000  0.0000   1.00 0.65  
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+
+Contrast: BsT_Potrero 
+
+              average      sd   ratio     ava     avb cumsum     p  
+Fuste          0.2273  0.1500  1.5160 61.8000 63.0000   0.29 0.645  
+Hojarasca      0.1669  0.1479  1.1290 44.5000 30.5000   0.51 0.805  
+Otros          0.1659  0.1215  1.3650 42.2000 30.2000   0.72 0.504  
+Roca           0.0848  0.1176  0.7210  8.8000  9.0000   0.83 0.080 .
+Hoja           0.0467  0.0790  0.5910 26.2000 10.0000   0.89 0.133  
+Suelo desnudo  0.0354  0.0427  0.8290  4.0000  5.2000   0.94 0.907  
+Rama           0.0353  0.0440  0.8020 26.5000  9.3000   0.98 0.743  
+Raíz           0.0094  0.0135  0.6980  1.1000  4.5000   0.99 0.442  
+Raiz           0.0051  0.0082  0.6210  1.6000  2.2000   1.00 0.804  
+otros          0.0006  0.0014  0.3980  0.2000  0.3000   1.00 0.692  
+rama           0.0002  0.0007  0.3430  0.1000  0.1000   1.00 0.044 *
+hoja           0.0002  0.0005  0.3470  0.2000  0.0000   1.00 0.224  
+hojarasca      0.0000  0.0000     NaN  0.0000  0.0000   1.00    NA  
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+
+Contrast: BsT_Rastrojo 
+
+              average      sd   ratio     ava     avb cumsum     p  
+Hojarasca      0.1908  0.1485  1.2850 44.5000 54.4000   0.24 0.420  
+Fuste          0.1899  0.1658  1.1450 61.8000 86.6000   0.49 0.974  
+Otros          0.1808  0.1509  1.1980 42.2000 30.9000   0.72 0.219  
+Roca           0.0712  0.1219  0.5840  8.8000  2.8000   0.81 0.217  
+Rama           0.0520  0.0798  0.6510 26.5000 30.0000   0.88 0.155  
+Suelo desnudo  0.0473  0.0650  0.7280  4.0000  8.1000   0.94 0.534  
+Hoja           0.0274  0.0456  0.6000 26.2000 19.6000   0.97 0.789  
+Raiz           0.0105  0.0207  0.5060  1.6000  3.9000   0.99 0.136  
+Raíz           0.0087  0.0152  0.5690  1.1000  6.7000   1.00 0.597  
+otros          0.0020  0.0061  0.3300  0.2000  0.7000   1.00 0.262  
+hoja           0.0002  0.0005  0.3430  0.2000  0.0000   1.00 0.046 *
+rama           0.0000  0.0001  0.2840  0.1000  0.0000   1.00 0.614  
+hojarasca      0.0000  0.0000     NaN  0.0000  0.0000   1.00    NA  
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+
+Contrast: Manglar_Potrero 
+
+              average      sd   ratio     ava     avb cumsum     p  
+Fuste          0.2781  0.1751  1.5880 52.5000 63.0000   0.35 0.081 .
+Hojarasca      0.1752  0.1743  1.0050 29.4000 30.5000   0.58 0.685  
+Otros          0.1475  0.1270  1.1610 23.2000 30.2000   0.76 0.820  
+Roca           0.0492  0.0741  0.6640  3.4000  9.0000   0.83 0.690  
+Suelo desnudo  0.0468  0.0574  0.8160  7.4000  5.2000   0.89 0.530  
+Hoja           0.0433  0.0854  0.5070  3.9000 10.0000   0.94 0.205  
+Rama           0.0287  0.0354  0.8120  6.1000  9.3000   0.98 0.855  
+Raíz           0.0098  0.0131  0.7470  1.1000  4.5000   0.99 0.411  
+Raiz           0.0044  0.0063  0.6990  1.2000  2.2000   1.00 0.857  
+hojarasca      0.0012  0.0039  0.3140  0.3000  0.0000   1.00 0.223  
+otros          0.0005  0.0014  0.3640  0.0000  0.3000   1.00 0.764  
+rama           0.0002  0.0007  0.3040  0.0000  0.1000   1.00 0.357  
+hoja           0.0000  0.0000     NaN  0.0000  0.0000   1.00    NA  
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+
+Contrast: Manglar_Rastrojo 
+
+              average      sd   ratio     ava     avb cumsum     p  
+Fuste          0.2580  0.2049  1.2590 52.5000 86.6000   0.32 0.232  
+Hojarasca      0.2030  0.1749  1.1610 29.4000 54.4000   0.58 0.227  
+Otros          0.1554  0.1454  1.0680 23.2000 30.9000   0.77 0.680  
+Suelo desnudo  0.0588  0.0742  0.7930  7.4000  8.1000   0.85 0.124  
+Rama           0.0482  0.0868  0.5550  6.1000 30.0000   0.91 0.317  
+Roca           0.0263  0.0403  0.6530  3.4000  2.8000   0.94 0.989  
+Hoja           0.0256  0.0496  0.5150  3.9000 19.6000   0.97 0.813  
+Raíz           0.0094  0.0157  0.5990  1.1000  6.7000   0.98 0.459  
+Raiz           0.0093  0.0206  0.4530  1.2000  3.9000   1.00 0.334  
+otros          0.0019  0.0059  0.3180  0.0000  0.7000   1.00 0.352  
+hojarasca      0.0013  0.0041  0.3180  0.3000  0.0000   1.00 0.041 *
+hoja           0.0000  0.0000     NaN  0.0000  0.0000   1.00    NA  
+rama           0.0000  0.0000     NaN  0.0000  0.0000   1.00    NA  
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+
+Contrast: Potrero_Rastrojo 
+
+              average      sd   ratio     ava     avb cumsum     p   
+Fuste          0.2470  0.1715  1.4410 63.0000 86.6000   0.31 0.376   
+Hojarasca      0.1790  0.1548  1.1560 30.5000 54.4000   0.54 0.619   
+Otros          0.1557  0.1280  1.2170 30.2000 30.9000   0.74 0.696   
+Roca           0.0534  0.0688  0.7770  9.0000  2.8000   0.81 0.650   
+Suelo desnudo  0.0478  0.0600  0.7970  5.2000  8.1000   0.87 0.475   
+Hoja           0.0384  0.0690  0.5570 10.0000 19.6000   0.92 0.338   
+Rama           0.0378  0.0637  0.5930  9.3000 30.0000   0.97 0.633   
+Raíz           0.0150  0.0161  0.9320  4.5000  6.7000   0.98 0.008 **
+Raiz           0.0093  0.0189  0.4940  2.2000  3.9000   1.00 0.355   
+otros          0.0022  0.0057  0.3890  0.3000  0.7000   1.00 0.182   
+rama           0.0002  0.0007  0.3000  0.1000  0.0000   1.00 0.193   
+hoja           0.0000  0.0000     NaN  0.0000  0.0000   1.00    NA   
+hojarasca      0.0000  0.0000     NaN  0.0000  0.0000   1.00    NA   
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+Permutation: free
+Number of permutations: 999</code></pre>
+</div>
+</div>
+<hr>
+</section>
+</section>
+</section>
+
+</main>
+<!-- /main column -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    target: function(trigger) {
+      return trigger.previousElementSibling;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copiado");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copiado");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+
+
+
+</body></html>
